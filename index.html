@@ -19,7 +19,7 @@
 
   <body>
     <header class="header">
-      <div class="header-border">
+      <div class="header__border">
         <div class="header-nav container">
           <nav class="main-nav">
             <a class="logo" href="./index.html" lang="en"><span class="accent">Web</span>Studio</a>
@@ -57,8 +57,10 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button primary" type="button" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn btn--primary hero__btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -66,49 +68,51 @@
         <div class="container">
           <h2 class="visually-hidden">Чому ми?</h2>
 
-          <ul class="benefits-list list">
-            <li class="item">
-              <span class="thumb">
+          <ul class="benefits__list list">
+            <li>
+              <span class="benefits__thumb">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </span>
-              <h3 class="title">Увага до деталей</h3>
-              <p class="text">
+              <h3 class="benefits__title">Увага до деталей</h3>
+              <p class="benefits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
-            <li class="item">
-              <span class="thumb">
+            <li>
+              <span class="benefits__thumb">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </span>
-              <h3 class="title">Пунктуальність</h3>
-              <p class="text">
+              <h3 class="benefits__title">Пунктуальність</h3>
+              <p class="benefits__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
-            <li class="item">
-              <span class="thumb">
+            <li>
+              <span class="benefits__thumb">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </span>
-              <h3 class="title">Планування</h3>
-              <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <h3 class="benefits__title">Планування</h3>
+              <p class="benefits__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
 
-            <li class="item">
-              <span class="thumb">
+            <li>
+              <span class="benefits__thumb">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </span>
-              <h3 class="title">Сучасні технології</h3>
-              <p class="text">
+              <h3 class="benefits__title">Сучасні технології</h3>
+              <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -414,8 +418,8 @@
             </address>
           </div>
 
-          <div>
-            <span class="cta">Приєднуйтесь</span>
+          <div class="socials">
+            <span class="socials__cta">Приєднуйтесь</span>
             <ul class="socials-list list">
               <li>
                 <a class="socials-link" href="">
@@ -451,19 +455,19 @@
             </ul>
           </div>
 
-          <div>
-            <span class="cta">Підпишіться на розсилку</span>
-            <form class="subscribe-form">
+          <div class="subscribe">
+            <span class="subscribe__cta">Підпишіться на розсилку</span>
+            <form class="subscribe__form">
               <label class="visually-hidden" for="subscribe-email">E-mail</label>
               <input
-                class="subscribe-input"
+                class="subscribe__input"
                 id="subscribe-email"
                 type="email"
                 name="subscribe-email"
                 placeholder="E-mail"
               />
 
-              <button class="button primary" type="submit">
+              <button class="btn btn--primary subscribe__btn" type="submit">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -523,10 +527,10 @@
             <a class="terms-link" href="">Умови договору</a></label
           >
 
-          <button class="button primary" type="submit">Відправити</button>
+          <button class="btn btn--primary" type="submit">Відправити</button>
         </form>
 
-        <button class="close-button" type="button" data-modal-close>
+        <button class="close-btn" type="button" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/icons.svg#icon-close-18"></use>
           </svg>

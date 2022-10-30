@@ -19,7 +19,7 @@
 
   <body>
     <header class="header">
-      <div class="header-border">
+      <div class="header__border">
         <div class="header-nav container">
           <nav class="main-nav">
             <a class="logo" href="./index.html" lang="en"><span class="accent">Web</span>Studio</a>
@@ -60,11 +60,19 @@
           <h1 class="visually-hidden">Портфоліо</h1>
 
           <ul class="filters list">
-            <li class="item"><button class="button secondary" type="button">Усі</button></li>
-            <li class="item"><button class="button secondary" type="button">Веб-сайти</button></li>
-            <li class="item"><button class="button secondary" type="button">Додатки</button></li>
-            <li class="item"><button class="button secondary" type="button">Дизайн</button></li>
-            <li class="item"><button class="button secondary" type="button">Маркетинг</button></li>
+            <li class="item"><button class="btn btn--secondary" type="button">Усі</button></li>
+            <li class="item">
+              <button class="btn btn--secondary" type="button">Веб-сайти</button>
+            </li>
+            <li class="item">
+              <button class="btn btn--secondary" type="button">Додатки</button>
+            </li>
+            <li class="item">
+              <button class="btn btn--secondary" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="btn btn--secondary" type="button">Маркетинг</button>
+            </li>
           </ul>
 
           <ul class="portfolio-list list">
@@ -254,9 +262,11 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
+
                 <li class="item">
                   <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
+
                 <li class="item">
                   <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
@@ -264,8 +274,8 @@
             </address>
           </div>
 
-          <div>
-            <span class="cta">Приєднуйтесь</span>
+          <div class="socials">
+            <span class="socials__cta">Приєднуйтесь</span>
             <ul class="socials-list list">
               <li>
                 <a class="socials-link" href="">
@@ -274,6 +284,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a class="socials-link" href="">
                   <svg width="20" height="20">
@@ -281,6 +292,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a class="socials-link" href="">
                   <svg width="20" height="20">
@@ -288,6 +300,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a class="socials-link" href="">
                   <svg width="20" height="20">
@@ -298,18 +311,19 @@
             </ul>
           </div>
 
-          <div>
-            <span class="cta">Підпишіться на розсилку</span>
-            <form class="subscribe-form">
+          <div class="subscribe">
+            <span class="subscribe__cta">Підпишіться на розсилку</span>
+            <form class="subscribe__form">
               <label class="visually-hidden" for="subscribe-email">E-mail</label>
               <input
-                class="subscribe-input"
+                class="subscribe__input"
                 id="subscribe-email"
                 type="email"
                 name="subscribe-email"
                 placeholder="E-mail"
               />
-              <button class="button primary" type="submit">
+
+              <button class="btn btn--primary subscribe__btn" type="submit">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
