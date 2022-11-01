@@ -92,7 +92,11 @@ img {
 
 /* header */
 
-.header-nav {
+.header__border {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header__nav {
   display: flex;
   align-items: center;
 }
@@ -102,21 +106,18 @@ img {
   align-items: center;
 }
 
-.header .logo {
+.header__logo {
   margin-right: 93px;
   color: var(--black-color);
 }
 
-.site-nav {
+.main-nav__list {
   display: flex;
   align-items: center;
+  gap: 50px;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav .link {
+.main-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -130,17 +131,17 @@ img {
   transition: color var(--transition-time) var(--cubic);
 }
 
-.site-nav .link.current,
-.site-nav .link:hover,
-.site-nav .link:focus {
+.main-nav__link:hover,
+.main-nav__link:focus {
   color: var(--accent-color);
 }
 
-.link.current {
+.main-nav__link--current {
   position: relative;
+  color: var(--accent-color);
 }
 
-.link.current::after {
+.main-nav__link--current::after {
   content: '';
 
   position: absolute;
@@ -154,17 +155,14 @@ img {
   border-radius: 2px;
 }
 
-.contacts-header {
+.header__contact-list {
   display: flex;
   align-items: center;
   margin-left: auto;
+  gap: 50px;
 }
 
-.contacts-header .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header .contact {
+.header__contact {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -181,14 +179,10 @@ img {
   transition: color var(--transition-time) var(--cubic), fill var(--transition-time) var(--cubic);
 }
 
-.header .contact:hover,
-.header .contact:focus {
+.header__contact:hover,
+.header__contact:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.header__border {
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 /* footer */
@@ -200,20 +194,20 @@ img {
   background-color: var(--bg-darkgrey-color);
 }
 
-.footer-nav {
+.footer__nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.footer .logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 
   color: var(--white-color);
 }
 
-.contacts-footer .item:not(:last-child) {
+.footer__contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -224,7 +218,7 @@ img {
   text-decoration: none;
 }
 
-.footer .contact {
+.footer__contact {
   color: var(--contacts-color);
   line-height: 1.71;
   font-style: normal;
@@ -233,13 +227,12 @@ img {
   transition: color var(--transition-time) var(--cubic);
 }
 
-.footer .contact:hover,
-.footer .contact:focus {
+.footer__contact:hover,
+.footer__contact:focus {
   color: var(--accent-color);
 }
 
-.socials__cta,
-.subscribe__cta {
+.footer__cta {
   display: block;
   margin-bottom: 20px;
 
@@ -278,14 +271,14 @@ img {
 
 /* socials */
 
-.socials-list {
+.socials__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.socials-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,13 +293,13 @@ img {
     background-color var(--transition-time) var(--cubic);
 }
 
-.footer .socials-link {
+.socials__link--footer {
   fill: var(--white-color);
   background-color: var(--bg-socials-color);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -388,7 +381,7 @@ img {
   text-transform: uppercase;
 }
 
-.benefits__text {
+.benefits__copy {
   line-height: 1.71;
 }
 
@@ -531,7 +524,7 @@ img {
   overflow: hidden;
 }
 
-.portfolio__descr {
+.portfolio__copy {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -548,19 +541,19 @@ img {
   transition: transform var(--transition-time) var(--cubic);
 }
 
-.portfolio__link:hover .portfolio__descr,
-.portfolio__link:focus .portfolio__descr {
+.portfolio__link:hover .portfolio__copy,
+.portfolio__link:focus .portfolio__copy {
   transform: translateY(0);
 }
 
-.portfolio__content {
+.portfolio__header {
   padding: 20px 24px;
 
   border: 1px solid var(--portfolio-border-color);
   border-top: 0;
 }
 
-.portfolio__label {
+.portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
 
