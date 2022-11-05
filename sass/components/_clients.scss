@@ -1,0 +1,27 @@
+.clients__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    fill: var(--icons-color);
+    border: 1px solid var(--icons-color);
+    border-radius: var(--border-radius);
+
+    transition: fill var(--transition-time) var(--cubic),
+        border-color var(--transition-time) var(--cubic);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
