@@ -1,27 +1,18 @@
 body {
-    color: var(--primary-text-color);
+    color: $color-text-primary;
     font-family: 'Roboto', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
         'helvetica neue', 'helvetica', 'Cantarell', 'Ubuntu', 'noto', 'arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
 
-    background-color: var(--white-color);
-}
-
-p {
-    margin: 0;
+    background-color: $color-white;
 }
 
 img {
     display: block;
     max-width: 100%;
-}
-
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    height: auto;
 }
 
 .container {

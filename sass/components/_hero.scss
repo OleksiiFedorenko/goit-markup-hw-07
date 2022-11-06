@@ -4,8 +4,8 @@
 
     text-align: center;
 
-    background-color: var(--bg-darkgrey-color);
-    background-image: linear-gradient(var(--bg-hero-overlay), var(--bg-hero-overlay)),
+    background-color: $bg-darkgrey;
+    background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
         url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -18,10 +18,14 @@
     margin-left: auto;
     margin-right: auto;
 
-    color: var(--white-color);
+    color: $color-white;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.hero__btn {
+    padding: 10px 32px;
 }

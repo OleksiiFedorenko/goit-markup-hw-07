@@ -3,8 +3,7 @@
 }
 
 .doings__list {
-    display: flex;
-    justify-content: space-between;
+    @include flex($justify: space-between);
 }
 
 .doings__card {
@@ -19,11 +18,11 @@
     padding-top: 27px;
     padding-bottom: 27px;
 
-    color: var(--white-color);
+    color: $color-white;
     font-weight: 700;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
 
-    background: var(--bg-doings-overlay);
+    background: $bg-overlay-doings;
 }

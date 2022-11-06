@@ -1,27 +1,22 @@
 .clients__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     gap: 30px;
 }
 
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     width: 170px;
     height: 92px;
 
-    fill: var(--icons-color);
-    border: 1px solid var(--icons-color);
-    border-radius: var(--border-radius);
+    fill: $color-icon;
+    border: 1px solid $color-icon;
+    border-radius: $border-radius;
 
-    transition: fill var(--transition-time) var(--cubic),
-        border-color var(--transition-time) var(--cubic);
-}
+    transition: fill $transition-time $cubic-bezier, border-color $transition-time $cubic-bezier;
 
-.clients__link:hover,
-.clients__link:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        fill: $color-accent;
+        border-color: $color-accent;
+    }
 }

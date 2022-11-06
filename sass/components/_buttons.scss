@@ -1,65 +1,55 @@
 .btn {
     cursor: pointer;
     border: 0;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
 }
 
 .btn--primary {
     min-width: 200px;
     padding: 10px 28px;
 
-    color: var(--white-color);
-    fill: var(--white-color);
+    color: $color-white;
+    fill: $color-white;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
 
-    background-color: var(--accent-color);
+    background-color: $color-accent;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 0.15);
-    transition: background-color var(--transition-time) var(--cubic);
-}
+    transition: background-color $transition-time $cubic-bezier;
 
-.hero__btn {
-    padding: 10px 32px;
-}
-
-.subscribe__btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.btn--primary:hover,
-.btn--primary:focus,
-.btn--primary:active {
-    background-color: var(--accent-active-color);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $color-accent-active;
+    }
 }
 
 .btn--secondary {
     min-width: 73px;
     padding: 6px 22px;
 
-    color: var(--title-color);
+    color: $color-title;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
 
-    background-color: var(--bg-grey-color);
+    background-color: $bg-grey;
 
-    transition: color var(--transition-time) var(--cubic),
-        background-color var(--transition-time) var(--cubic),
-        box-shadow var(--transition-time) var(--cubic);
-}
+    transition: color $transition-time $cubic-bezier,
+        background-color $transition-time $cubic-bezier,
+        box-shadow $transition-time $cubic-bezier;
 
-.btn--secondary:hover,
-.btn--secondary:focus,
-.btn--secondary:active {
-    color: var(--white-color);
-
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgb(0 0 0 / 0.1), 0px 1px 2px rgb(0 0 0 / 0.08),
-        0px 2px 2px rgb(0 0 0/ 0.12);
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-white;
+    
+        background-color: $color-accent;
+        box-shadow: 0px 3px 1px rgb(0 0 0 / 0.1), 0px 1px 2px rgb(0 0 0 / 0.08),
+            0px 2px 2px rgb(0 0 0/ 0.12);
+    }
 }
 
 .close-btn {
@@ -67,22 +57,20 @@
     top: 8px;
     right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     width: 30px;
     height: 30px;
 
-    fill: var(--black-color);
+    fill: $color-black;
 
     cursor: pointer;
-    background-color: var(--white-color);
-    border: 1px solid var(--close-border-color);
+    background-color: $color-white;
+    border: 1px solid $color-border-close;
     border-radius: 50%;
-    transition: background-color var(--transition-time) var(--cubic);
-}
+    transition: background-color $transition-time $cubic-bezier;
 
-.close-btn:hover,
-.close-btn:focus {
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+        fill: $color-accent;
+    }
 }

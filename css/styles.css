@@ -48,7 +48,7 @@ img {
   max-width: 100%;
 }
 
-.list {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -675,7 +675,7 @@ img {
   transition: opacity var(--transition-time) var(--cubic);
 }
 
-.backdrop--hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -699,7 +699,7 @@ img {
     opacity var(--transition-time) var(--cubic);
 }
 
-.backdrop--hidden .modal {
+.is-hidden .modal {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.8);
 }
@@ -723,7 +723,7 @@ img {
   margin-bottom: 4px;
 
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   text-align: left;
 }
@@ -780,7 +780,7 @@ img {
 .callback__textarea::placeholder {
   color: var(--placeholder-color);
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
@@ -791,7 +791,7 @@ img {
 .agreement__label {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   line-height: 1.71;
 }

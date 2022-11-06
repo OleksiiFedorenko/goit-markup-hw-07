@@ -2,20 +2,18 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--bg-darkgrey-color);
+    background-color: $bg-darkgrey;
 }
 
 .footer__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    @include flex(flex, space-between, baseline);
 }
 
 .footer__logo {
     display: block;
     margin-bottom: 20px;
 
-    color: var(--white-color);
+    color: $color-white;
 }
 
 .footer__contact-item:not(:last-child) {
@@ -23,31 +21,31 @@
 }
 
 .address {
-    color: var(--white-color);
+    color: $color-white;
     line-height: 1.71;
     font-style: normal;
     text-decoration: none;
 }
 
 .footer__contact {
-    color: var(--contacts-color);
+    color: $color-contact-footer;
     line-height: 1.71;
     font-style: normal;
     text-decoration: none;
 
-    transition: color var(--transition-time) var(--cubic);
-}
+    transition: color $transition-time $cubic-bezier;
 
-.footer__contact:hover,
-.footer__contact:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
 }
 
 .footer__cta {
     display: block;
     margin-bottom: 20px;
 
-    color: var(--white-color);
+    color: $color-white;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -62,20 +60,25 @@
     width: 358px;
     padding: 15px 16px;
 
-    color: var(--white-color);
+    color: $color-white;
     font-size: 16px;
     line-height: 1.25;
 
     background-color: transparent;
     border: 1px solid rgb(255 255 255 / 0.3);
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
     outline: none;
+
+    &:focus {
+        border-color: $color-accent;
+    }
+
+    &::placeholder {
+        color: $color-contact-footer;
+    }
 }
 
-.subscribe__input::placeholder {
-    color: var(--contacts-color);
-}
-
-.subscribe__input:focus {
-    border-color: var(--accent-color);
+.subscribe__btn {
+    @include flex();
+    gap: 10px;
 }
