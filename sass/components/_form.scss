@@ -97,15 +97,15 @@
 
     border: 2px solid $color-title;
     border-radius: 2px;
+
+    .agreement__input:checked+& {
+        background-color: $color-accent;
+        border: hidden;
+    }
 }
 
 .agreement__icon {
     fill: $color-white;
-}
-
-.agreement__input:checked+.agreement__checkbox {
-    background-color: $color-accent;
-    border: hidden;
 }
 
 .agreement__terms-link {
